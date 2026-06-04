@@ -1,595 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladger's Interior & Plumbing Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<!-- Services Section -->
-<section class="services-section">
-    <h2 class="section-title">Our <span>Services</span></h2>
-    <div class="services-grid">
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-placeholder">L</div>
+                <div class="company-info">
+                    <h1>LADGER'S</h1>
+                    <p>Interior & Plumbing Solutions</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <span>0721689895</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <span>joeladger254@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <!-- 1. Bathroom Installation -->
-        <div class="service-card" onclick="openModal('bathroom-installation')">
-            <div class="card-image-container">
-                <img src="https://i.imgur.com/zdXxsyG.jpeg" alt="Bathroom Installation" class="card-img">
-            </div>
-            <div class="card-body">
-                <div class="service-number">1</div>
-                <h3>Bathroom Installation</h3>
-                <p>Complete bathroom setup with modern fixtures and professional installation.</p>
-                <div class="click-hint">Click for details →</div>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image-container">
+            <img src="your-image.jpg" alt="Ladger's Plumbing & Interior Solutions" class="hero-img">
         </div>
+    </section>
 
-        <!-- 2. Solar Water Heater -->
-        <div class="service-card" onclick="openModal('solar-water-heater')">
-            <div class="card-image-container">
-                <img src="https://i.imgur.com/mfIUKr1.jpeg" alt="Solar Water Heater" class="card-img">
-            </div>
-            <div class="card-body">
-                <div class="service-number">2</div>
-                <h3>Solar Water Heater</h3>
-                <p>Installation & maintenance of energy-efficient solar water heating systems.</p>
-                <div class="click-hint">Click for details →</div>
-            </div>
-        </div>
+    <!-- Services Section -->
+    <section class="services-section">
+        <h2 class="section-title">Our <span>Services</span></h2>
+        <div class="services-grid">
 
-        <!-- 3. Water Filtration -->
-        <div class="service-card" onclick="openModal('water-filtration')">
-            <div class="card-image-container">
-                <img src="https://i.imgur.com/fgU0Mey.jpeg" alt="Water Filtration" class="card-img">
+            <div class="service-card" onclick="openModal('bathroom-installation')">
+                <div class="card-image-container">
+                    <img src="bathroom1.jpg" alt="Bathroom Installation" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="service-number">1</div>
+                    <h3>Bathroom Installation</h3>
+                    <p>Complete bathroom setup with modern fixtures and professional installation.</p>
+                    <div class="click-hint">Click for details →</div>
+                </div>
             </div>
-            <div class="card-body">
-                <div class="service-number">3</div>
-                <h3>Water Filtration</h3>
-                <p>Advanced water purification systems for clean, safe drinking water.</p>
-                <div class="click-hint">Click for details →</div>
-            </div>
-        </div>
 
-        <!-- 4. Irrigation -->
-        <div class="service-card" onclick="openModal('irrigation')">
-            <div class="card-image-container">
-                <img src="https://i.imgur.com/4mMvDZ8.jpeg" alt="Irrigation" class="card-img">
+            <div class="service-card" onclick="openModal('solar-water-heater')">
+                <div class="card-image-container">
+                    <img src="solar1.jpg" alt="Solar Water Heater" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="service-number">2</div>
+                    <h3>Solar Water Heater</h3>
+                    <p>Installation & maintenance of energy-efficient solar water heating systems.</p>
+                    <div class="click-hint">Click for details →</div>
+                </div>
             </div>
-            <div class="card-body">
-                <div class="service-number">4</div>
-                <h3>Irrigation Systems</h3>
-                <p>Modern irrigation solutions for efficient landscape watering.</p>
-                <div class="click-hint">Click for details →</div>
-            </div>
-        </div>
 
-        <!-- 5. Drain Cleaning -->
-        <div class="service-card" onclick="openModal('drain-cleaning')">
-            <div class="card-image-container">
-                <img src="https://i.imgur.com/DUAcz32.jpeg" alt="Drain Cleaning" class="card-img">
+            <div class="service-card" onclick="openModal('water-filtration')">
+                <div class="card-image-container">
+                    <img src="filtration1.jpg" alt="Water Filtration" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="service-number">3</div>
+                    <h3>Water Filtration</h3>
+                    <p>Advanced water purification systems for clean, safe drinking water.</p>
+                    <div class="click-hint">Click for details →</div>
+                </div>
             </div>
-            <div class="card-body">
-                <div class="service-number">5</div>
-                <h3>Drain Cleaning</h3>
-                <p>Professional drain cleaning and unclogging services.</p>
-                <div class="click-hint">Click for details →</div>
-            </div>
-        </div>
 
-        <!-- 6. Drainage -->
-        <div class="service-card" onclick="openModal('drainage')">
-            <div class="card-image-container">
-                <img src="https://i.imgur.com/UqMS0fJ.jpeg" alt="Drainage" class="card-img">
+            <div class="service-card" onclick="openModal('irrigation')">
+                <div class="card-image-container">
+                    <img src="irrigation1.jpg" alt="Irrigation" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="service-number">4</div>
+                    <h3>Irrigation Systems</h3>
+                    <p>Modern irrigation solutions for efficient landscape watering.</p>
+                    <div class="click-hint">Click for details →</div>
+                </div>
             </div>
-            <div class="card-body">
-                <div class="service-number">6</div>
-                <h3>Drainage Solutions</h3>
-                <p>Complete drainage system design and installation.</p>
-                <div class="click-hint">Click for details →</div>
-            </div>
-        </div>
 
-        <!-- 7. Bio Digester -->
-        <div class="service-card" onclick="openModal('biodigester')">
-            <div class="card-image-container">
-                <img src="https://i.imgur.com/8LVoo7K.jpeg" alt="Bio Digester" class="card-img">
+            <div class="service-card" onclick="openModal('drain-cleaning')">
+                <div class="card-image-container">
+                    <img src="drain1.jpg" alt="Drain Cleaning" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="service-number">5</div>
+                    <h3>Drain Cleaning</h3>
+                    <p>Professional drain cleaning and unclogging services.</p>
+                    <div class="click-hint">Click for details →</div>
+                </div>
             </div>
-            <div class="card-body">
-                <div class="service-number">7</div>
-                <h3>Bio Digester Installation</h3>
-                <p>Eco-friendly bio digester setup and regular maintenance.</p>
-                <div class="click-hint">Click for details →</div>
-            </div>
-        </div>
 
-        <!-- 8. Gutter Installation -->
-        <div class="service-card" onclick="openModal('gutter-installation')">
-            <div class="card-image-container">
-                <img src="https://i.imgur.com/YVgA1BB.jpeg" alt="Gutter Installation" class="card-img">
+            <div class="service-card" onclick="openModal('drainage')">
+                <div class="card-image-container">
+                    <img src="drainage1.jpg" alt="Drainage" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="service-number">6</div>
+                    <h3>Drainage Solutions</h3>
+                    <p>Complete drainage system design and installation.</p>
+                    <div class="click-hint">Click for details →</div>
+                </div>
             </div>
-            <div class="card-body">
-                <div class="service-number">8</div>
-                <h3>Gutter Installation</h3>
-                <p>Professional gutter systems for water collection and storage.</p>
-                <div class="click-hint">Click for details →</div>
-            </div>
-        </div>
 
-        <!-- 9. Heat/Booster Pump -->
-        <div class="service-card" onclick="openModal('heat-pump')">
-            <div class="card-image-container">
-                <img src="https://i.imgur.com/ZmSScSl.jpeg" alt="Heat Pump" class="card-img">
+            <div class="service-card" onclick="openModal('biodigester')">
+                <div class="card-image-container">
+                    <img src="biodigester1.jpg" alt="Bio Digester" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="service-number">7</div>
+                    <h3>Bio Digester Installation</h3>
+                    <p>Eco-friendly bio digester setup and regular maintenance.</p>
+                    <div class="click-hint">Click for details →</div>
+                </div>
             </div>
-            <div class="card-body">
-                <div class="service-number">9</div>
-                <h3>Heat/Booster Pump</h3>
-                <p>Installation & maintenance of heat and booster pump systems.</p>
-                <div class="click-hint">Click for details →</div>
-            </div>
-        </div>
 
-        <!-- 10. General Maintenance -->
-        <div class="service-card" onclick="openModal('general-maintenance')">
-            <div class="card-image-container">
-                <img src="https://i.imgur.com/hKwIhwM.jpeg" alt="General Maintenance" class="card-img">
+            <div class="service-card" onclick="openModal('gutter-installation')">
+                <div class="card-image-container">
+                    <img src="gutter1.jpg" alt="Gutter Installation" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="service-number">8</div>
+                    <h3>Gutter Installation</h3>
+                    <p>Professional gutter systems to protect your property.</p>
+                    <div class="click-hint">Click for details →</div>
+                </div>
             </div>
-            <div class="card-body">
-                <div class="service-number">10</div>
-                <h3>General Maintenance</h3>
-                <p>Routine maintenance to keep your systems running smoothly.</p>
-                <div class="click-hint">Click for details →</div>
-            </div>
-        </div>
 
-        <!-- 11. Emergency Services -->
-        <div class="service-card" onclick="openModal('emergency')">
-            <div class="card-image-container">
-                <img src="https://i.imgur.com/OSlmTkz.jpeg" alt="Emergency Services" class="card-img">
+            <div class="service-card" onclick="openModal('heat-pump')">
+                <div class="card-image-container">
+                    <img src="pump1.jpg" alt="Heat Pump" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="service-number">9</div>
+                    <h3>Heat/Booster Pump</h3>
+                    <p>Installation & maintenance of heat and booster pump systems.</p>
+                    <div class="click-hint">Click for details →</div>
+                </div>
             </div>
-            <div class="card-body">
-                <div class="service-number">11</div>
-                <h3>Emergency Services</h3>
-                <p>24/7 emergency plumbing and repairs when you need us most.</p>
-                <div class="click-hint">Click for details →</div>
+
+            <div class="service-card" onclick="openModal('general-maintenance')">
+                <div class="card-image-container">
+                    <img src="maintenance1.jpg" alt="General Maintenance" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="service-number">10</div>
+                    <h3>General Maintenance</h3>
+                    <p>Routine maintenance to keep your systems running smoothly.</p>
+                    <div class="click-hint">Click for details →</div>
+                </div>
             </div>
-        </div>
 
-        <!-- 12. TV Mounting -->
-        <div class="service-card" onclick="openModal('tv-mounting')">
-            <div class="card-image-container">
-                <img src="https://i.imgur.com/9co4SzI.jpeg" alt="TV Mounting" class="card-img">
+            <div class="service-card" onclick="openModal('emergency')">
+                <div class="card-image-container">
+                    <img src="emergency1.jpg" alt="Emergency Services" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="service-number">11</div>
+                    <h3>Emergency Services</h3>
+                    <p>24/7 emergency plumbing and repairs when you need us most.</p>
+                    <div class="click-hint">Click for details →</div>
+                </div>
             </div>
-            <div class="card-body">
-                <div class="service-number">12</div>
-                <h3>TV Mounting</h3>
-                <p>Professional TV installation with proper cable management.</p>
-                <div class="click-hint">Click for details →</div>
+
+            <div class="service-card" onclick="openModal('tv-mounting')">
+                <div class="card-image-container">
+                    <img src="tv1.jpg" alt="TV Mounting" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="service-number">12</div>
+                    <h3>TV Mounting</h3>
+                    <p>Professional TV installation with proper cable management.</p>
+                    <div class="click-hint">Click for details →</div>
+                </div>
             </div>
-        </div>
 
-        <!-- 13. Tank Installation -->
-        <div class="service-card" onclick="openModal('tank-installation')">
-            <div class="card-image-container">
-                <img src="https://i.imgur.com/J4xnNic.jpeg" alt="Tank Installation" class="card-img">
+            <div class="service-card" onclick="openModal('tank-installation')">
+                <div class="card-image-container">
+                    <img src="tank1.jpg" alt="Tank Installation" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="service-number">13</div>
+                    <h3>Tank Installation & Cleaning</h3>
+                    <p>Water tank installation, cleaning, and maintenance services.</p>
+                    <div class="click-hint">Click for details →</div>
+                </div>
             </div>
-            <div class="card-body">
-                <div class="service-number">13</div>
-                <h3>Tank Installation & Cleaning</h3>
-                <p>Water tank installation, cleaning, and maintenance services.</p>
-                <div class="click-hint">Click for details →</div>
+
+            <div class="service-card" onclick="openModal('all-drainage')">
+                <div class="card-image-container">
+                    <img src="alldrainage1.jpg" alt="All Drainage" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="service-number">14</div>
+                    <h3>All Types of Drainage</h3>
+                    <p>Comprehensive drainage solutions for any property type.</p>
+                    <div class="click-hint">Click for details →</div>
+                </div>
             </div>
-        </div>
 
-        <!-- 14. Borehole Pump -->
-        <div class="service-card" onclick="openModal('borehole-pump')">
-            <div class="card-image-container">
-                <img src="https://i.imgur.com/efATfN6.jpeg" alt="Borehole Pump" class="card-img">
+        </div>
+    </section>
+
+    <!-- MODALS -->
+
+    <div id="bathroom-installation" class="modal" onclick="closeModalOnBgClick(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('bathroom-installation')">×</button>
+            <div class="modal-header">
+                <h2>Bathroom Installation</h2>
+                <p>Complete bathroom renovation and setup</p>
             </div>
-            <div class="card-body">
-                <div class="service-number">14</div>
-                <h3>Borehole Pump Fitting</h3>
-                <p>Professional borehole pump fitting and installation services.</p>
-                <div class="click-hint">Click for details →</div>
+            <div class="modal-images">
+                <img src="bathroom1.jpg" alt="Bathroom 1" class="modal-img">
+                <img src="bathroom2.jpg" alt="Bathroom 2" class="modal-img">
+                <img src="bathroom3.jpg" alt="Bathroom 3" class="modal-img">
             </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- MODALS -->
-
-<!-- Modal 1: Bathroom Installation -->
-<div id="bathroom-installation" class="modal" onclick="closeModalOnBgClick(event)">
-    <div class="modal-content">
-        <button class="close-btn" onclick="closeModal('bathroom-installation')">×</button>
-        <div class="modal-header">
-            <h2>Bathroom Installation</h2>
-            <p>Toilet and bathroom installation and assembly</p>
-        </div>
-        <div class="modal-images">
-            <img src="https://i.imgur.com/zdXxsyG.jpeg" alt="Bathroom 1" class="modal-img">
-            <img src="https://i.imgur.com/r5yYJpv.jpeg" alt="Bathroom 2" class="modal-img">
-            <img src="https://i.imgur.com/LIagZHv.jpeg" alt="Bathroom 3" class="modal-img">
-        </div>
-        <div class="modal-description">
-            <h3>About This Service</h3>
-            <p>We provide complete bathroom and toilet installation services including tile work, fixture installation, and modern design integration.</p>
-            <h3>What We Include:</h3>
-            <ul>
-                <li>Layout design and planning</li>
-                <li>Toilet and sink installation</li>
-                <li>Tile and flooring work</li>
-                <li>Shower and bathtub fitting</li>
-                <li>Ventilation systems</li>
-                <li>Quality assurance and testing</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Modal 2: Solar Water Heater -->
-<div id="solar-water-heater" class="modal" onclick="closeModalOnBgClick(event)">
-    <div class="modal-content">
-        <button class="close-btn" onclick="closeModal('solar-water-heater')">×</button>
-        <div class="modal-header">
-            <h2>Solar Water Heater</h2>
-            <p>Solar assembly and installation</p>
-        </div>
-        <div class="modal-images">
-            <img src="https://i.imgur.com/mfIUKr1.jpeg" alt="Solar 1" class="modal-img">
-            <img src="https://i.imgur.com/bEJ2auK.jpeg" alt="Solar 2" class="modal-img">
-            <img src="https://i.imgur.com/DRigIys.jpeg" alt="Solar 3" class="modal-img">
-        </div>
-        <div class="modal-description">
-            <h3>About This Service</h3>
-            <p>Transform your hot water needs with our professional solar water heater systems - eco-friendly and cost-effective.</p>
-            <h3>What We Include:</h3>
-            <ul>
-                <li>System design and sizing</li>
-                <li>Panel and collector installation</li>
-                <li>Tank setup and integration</li>
-                <li>Piping and connection work</li>
-                <li>Regular maintenance services</li>
-                <li>Performance optimization</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Modal 3: Water Filtration -->
-<div id="water-filtration" class="modal" onclick="closeModalOnBgClick(event)">
-    <div class="modal-content">
-        <button class="close-btn" onclick="closeModal('water-filtration')">×</button>
-        <div class="modal-header">
-            <h2>Water Filtration</h2>
-            <p>Pure, safe drinking water for your family</p>
-        </div>
-        <div class="modal-images">
-            <img src="https://i.imgur.com/fgU0Mey.jpeg" alt="Filtration 1" class="modal-img">
-            <img src="https://i.imgur.com/5aULanZ.jpeg" alt="Filtration 2" class="modal-img">
-            <img src="https://i.imgur.com/VBFXpiq.jpeg" alt="Filtration 3" class="modal-img">
-        </div>
-        <div class="modal-description">
-            <h3>About This Service</h3>
-            <p>Advanced water filtration systems for clean, safe and healthy drinking water.</p>
-            <h3>What We Include:</h3>
-            <ul>
-                <li>Water quality testing</li>
-                <li>Filter system selection</li>
-                <li>Professional installation</li>
-                <li>Maintenance and filter replacement</li>
-                <li>System monitoring</li>
-            </ul>
+            <div class="modal-description">
+                <h3>About This Service</h3>
+                <p>We provide complete bathroom installation services including tile work, fixture installation, and modern design integration.</p>
+                <h3>What We Include:</h3>
+                <ul>
+                    <li>Layout design and planning</li>
+                    <li>Plumbing installation</li>
+                    <li>Tile and flooring work</li>
+                    <li>Fixture installation (toilets, sinks, showers)</li>
+                    <li>Ventilation systems</li>
+                    <li>Quality assurance and testing</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 4: Irrigation -->
-<div id="irrigation" class="modal" onclick="closeModalOnBgClick(event)">
-    <div class="modal-content">
-        <button class="close-btn" onclick="closeModal('irrigation')">×</button>
-        <div class="modal-header">
-            <h2>Irrigation Systems</h2>
-            <p>Efficient landscape watering solutions</p>
-        </div>
-        <div class="modal-images">
-            <img src="https://i.imgur.com/4mMvDZ8.jpeg" alt="Irrigation 1" class="modal-img">
-            <img src="https://i.imgur.com/qrhf4VP.jpeg" alt="Irrigation 2" class="modal-img">
-            <img src="https://i.imgur.com/CV52Ceg.jpeg" alt="Irrigation 3" class="modal-img">
-        </div>
-        <div class="modal-description">
-            <h3>About This Service</h3>
-            <p>Modern irrigation solutions designed to keep your landscape beautiful while conserving water.</p>
-            <h3>What We Include:</h3>
-            <ul>
-                <li>System design and layout</li>
-                <li>Sprinkler head installation</li>
-                <li>Pipe laying and connections</li>
-                <li>Controller programming</li>
-                <li>Maintenance and adjustments</li>
-            </ul>
+    <div id="solar-water-heater" class="modal" onclick="closeModalOnBgClick(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('solar-water-heater')">×</button>
+            <div class="modal-header">
+                <h2>Solar Water Heater</h2>
+                <p>Energy-efficient hot water solutions</p>
+            </div>
+            <div class="modal-images">
+                <img src="solar1.jpg" alt="Solar 1" class="modal-img">
+                <img src="solar2.jpg" alt="Solar 2" class="modal-img">
+                <img src="solar3.jpg" alt="Solar 3" class="modal-img">
+            </div>
+            <div class="modal-description">
+                <h3>About This Service</h3>
+                <p>Transform your hot water needs with our professional solar water heater systems - eco-friendly and cost-effective.</p>
+                <h3>What We Include:</h3>
+                <ul>
+                    <li>System design and sizing</li>
+                    <li>Panel installation</li>
+                    <li>Tank setup and integration</li>
+                    <li>Piping and connection work</li>
+                    <li>Regular maintenance services</li>
+                    <li>Performance optimization</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 5: Drain Cleaning -->
-<div id="drain-cleaning" class="modal" onclick="closeModalOnBgClick(event)">
-    <div class="modal-content">
-        <button class="close-btn" onclick="closeModal('drain-cleaning')">×</button>
-        <div class="modal-header">
-            <h2>Drain Cleaning</h2>
-            <p>Fast and effective drain solutions</p>
-        </div>
-        <div class="modal-images">
-            <img src="https://i.imgur.com/DUAcz32.jpeg" alt="Drain 1" class="modal-img">
-            <img src="https://i.imgur.com/OvxX2O7.jpeg" alt="Drain 2" class="modal-img">
-            <img src="https://i.imgur.com/jSKpz8D.jpeg" alt="Drain 3" class="modal-img">
-        </div>
-        <div class="modal-description">
-            <h3>About This Service</h3>
-            <p>Professional drain cleaning to remove blockages and keep your plumbing flowing smoothly.</p>
-            <h3>What We Include:</h3>
-            <ul>
-                <li>Drain inspection and diagnosis</li>
-                <li>High-pressure jetting</li>
-                <li>Snake/auger cleaning</li>
-                <li>Clog removal</li>
-                <li>System flushing</li>
-                <li>Prevention advice</li>
-            </ul>
+    <div id="water-filtration" class="modal" onclick="closeModalOnBgClick(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('water-filtration')">×</button>
+            <div class="modal-header">
+                <h2>Water Filtration</h2>
+                <p>Pure, safe drinking water for your family</p>
+            </div>
+            <div class="modal-images">
+                <img src="filtration1.jpg" alt="Filtration 1" class="modal-img">
+                <img src="filtration2.jpg" alt="Filtration 2" class="modal-img">
+                <img src="filtration3.jpg" alt="Filtration 3" class="modal-img">
+            </div>
+            <div class="modal-description">
+                <h3>About This Service</h3>
+                <p>Advanced water filtration systems to ensure your family has access to clean, safe, and healthy drinking water.</p>
+                <h3>What We Include:</h3>
+                <ul>
+                    <li>Water quality testing</li>
+                    <li>Filter system selection</li>
+                    <li>Professional installation</li>
+                    <li>Maintenance and filter replacement</li>
+                    <li>System monitoring</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 6: Drainage -->
-<div id="drainage" class="modal" onclick="closeModalOnBgClick(event)">
-    <div class="modal-content">
-        <button class="close-btn" onclick="closeModal('drainage')">×</button>
-        <div class="modal-header">
-            <h2>Drainage Solutions</h2>
-            <p>Complete drainage system design and installation</p>
-        </div>
-        <div class="modal-images">
-            <img src="https://i.imgur.com/UqMS0fJ.jpeg" alt="Drainage 1" class="modal-img">
-            <img src="https://i.imgur.com/OvxX2O7.jpeg" alt="Drainage 2" class="modal-img">
-            <img src="https://i.imgur.com/jSKpz8D.jpeg" alt="Drainage 3" class="modal-img">
-        </div>
-        <div class="modal-description">
-            <h3>About This Service</h3>
-            <p>We design and install complete drainage systems for residential and commercial properties.</p>
-            <h3>What We Include:</h3>
-            <ul>
-                <li>Site assessment and planning</li>
-                <li>Pipe sizing and routing</li>
-                <li>Excavation and installation</li>
-                <li>Connection to main lines</li>
-                <li>Testing and certification</li>
-            </ul>
+    <div id="irrigation" class="modal" onclick="closeModalOnBgClick(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('irrigation')">×</button>
+            <div class="modal-header">
+                <h2>Irrigation Systems</h2>
+                <p>Efficient landscape watering solutions</p>
+            </div>
+            <div class="modal-images">
+                <img src="irrigation1.jpg" alt="Irrigation 1" class="modal-img">
+                <img src="irrigation2.jpg" alt="Irrigation 2" class="modal-img">
+                <img src="irrigation3.jpg" alt="Irrigation 3" class="modal-img">
+            </div>
+            <div class="modal-description">
+                <h3>About This Service</h3>
+                <p>Modern irrigation solutions designed to keep your landscape beautiful while conserving water.</p>
+                <h3>What We Include:</h3>
+                <ul>
+                    <li>System design</li>
+                    <li>Sprinkler head installation</li>
+                    <li>Pipe laying and connections</li>
+                    <li>Controller programming</li>
+                    <li>Maintenance and adjustments</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 7: Bio Digester -->
-<div id="biodigester" class="modal" onclick="closeModalOnBgClick(event)">
-    <div class="modal-content">
-        <button class="close-btn" onclick="closeModal('biodigester')">×</button>
-        <div class="modal-header">
-            <h2>Bio Digester Installation</h2>
-            <p>Bio tank assembly and installation</p>
-        </div>
-        <div class="modal-images">
-            <img src="https://i.imgur.com/8LVoo7K.jpeg" alt="Bio Digester 1" class="modal-img">
-            <img src="https://i.imgur.com/MRQt7GF.jpeg" alt="Bio Digester 2" class="modal-img">
-            <img src="https://i.imgur.com/h9R7NwP.jpeg" alt="Bio Digester 3" class="modal-img">
-        </div>
-        <div class="modal-description">
-            <h3>About This Service</h3>
-            <p>Professional bio digester installation and maintenance for sustainable, eco-friendly waste management.</p>
-            <h3>What We Include:</h3>
-            <ul>
-                <li>Site preparation and excavation</li>
-                <li>Tank assembly and installation</li>
-                <li>Inlet and outlet pipe fitting</li>
-                <li>Bacterial inoculation</li>
-                <li>Regular maintenance</li>
-                <li>System optimization</li>
-            </ul>
+    <div id="drain-cleaning" class="modal" onclick="closeModalOnBgClick(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('drain-cleaning')">×</button>
+            <div class="modal-header">
+                <h2>Drain Cleaning</h2>
+                <p>Fast and effective drain solutions</p>
+            </div>
+            <div class="modal-images">
+                <img src="drain1.jpg" alt="Drain 1" class="modal-img">
+                <img src="drain2.jpg" alt="Drain 2" class="modal-img">
+                <img src="drain3.jpg" alt="Drain 3" class="modal-img">
+            </div>
+            <div class="modal-description">
+                <h3>About This Service</h3>
+                <p>Professional drain cleaning services to remove blockages and keep your plumbing flowing smoothly.</p>
+                <h3>What We Include:</h3>
+                <ul>
+                    <li>Drain inspection and diagnosis</li>
+                    <li>High-pressure jetting</li>
+                    <li>Snake cleaning</li>
+                    <li>Clog removal</li>
+                    <li>System flushing</li>
+                    <li>Prevention advice</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 8: Gutter Installation -->
-<div id="gutter-installation" class="modal" onclick="closeModalOnBgClick(event)">
-    <div class="modal-content">
-        <button class="close-btn" onclick="closeModal('gutter-installation')">×</button>
-        <div class="modal-header">
-            <h2>Gutter Installation</h2>
-            <p>Gutter fitting for water collection and storage</p>
-        </div>
-        <div class="modal-images">
-            <img src="https://i.imgur.com/YVgA1BB.jpeg" alt="Gutter 1" class="modal-img">
-            <img src="https://i.imgur.com/5VM5PS4.jpeg" alt="Gutter 2" class="modal-img">
-            <img src="https://i.imgur.com/Vn4bQJU.jpeg" alt="Gutter 3" class="modal-img">
-        </div>
-        <div class="modal-description">
-            <h3>About This Service</h3>
-            <p>Professional gutter fitting and installation for efficient rainwater collection and storage.</p>
-            <h3>What We Include:</h3>
-            <ul>
-                <li>Gutter selection and sizing</li>
-                <li>Installation on all roof lines</li>
-                <li>Downspout and pipe fitting</li>
-                <li>Water collection tank connection</li>
-                <li>Leaf guards and covers</li>
-                <li>Regular cleaning and maintenance</li>
-            </ul>
+    <div id="drainage" class="modal" onclick="closeModalOnBgClick(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('drainage')">×</button>
+            <div class="modal-header">
+                <h2>Drainage Solutions</h2>
+                <p>Complete drainage system design and installation</p>
+            </div>
+            <div class="modal-images">
+                <img src="drainage1.jpg" alt="Drainage 1" class="modal-img">
+                <img src="drainage2.jpg" alt="Drainage 2" class="modal-img">
+                <img src="drainage3.jpg" alt="Drainage 3" class="modal-img">
+            </div>
+            <div class="modal-description">
+                <h3>About This Service</h3>
+                <p>We design and install complete drainage systems for residential and commercial properties.</p>
+                <h3>What We Include:</h3>
+                <ul>
+                    <li>Site assessment and planning</li>
+                    <li>Pipe sizing and routing</li>
+                    <li>Excavation and installation</li>
+                    <li>Connection to main lines</li>
+                    <li>Testing and certification</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 9: Heat/Booster Pump -->
-<div id="heat-pump" class="modal" onclick="closeModalOnBgClick(event)">
-    <div class="modal-content">
-        <button class="close-btn" onclick="closeModal('heat-pump')">×</button>
-        <div class="modal-header">
-            <h2>Heat/Booster Pump</h2>
-            <p>Reliable hot water and pressure solutions</p>
-        </div>
-        <div class="modal-images">
-            <img src="https://i.imgur.com/ZmSScSl.jpeg" alt="Pump 1" class="modal-img">
-            <img src="https://i.imgur.com/9co4SzI.jpeg" alt="Pump 2" class="modal-img">
-            <img src="https://i.imgur.com/ySV3MIO.jpeg" alt="Pump 3" class="modal-img">
-        </div>
-        <div class="modal-description">
-            <h3>About This Service</h3>
-            <p>Professional heat and booster pump installation and maintenance for optimal water pressure and temperature.</p>
-            <h3>What We Include:</h3>
-            <ul>
-                <li>System assessment and sizing</li>
-                <li>Pump selection and supply</li>
-                <li>Professional installation</li>
-                <li>Piping and electrical connections</li>
-                <li>Regular maintenance</li>
-                <li>Performance tuning</li>
-            </ul>
+    <div id="biodigester" class="modal" onclick="closeModalOnBgClick(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('biodigester')">×</button>
+            <div class="modal-header">
+                <h2>Bio Digester Installation</h2>
+                <p>Eco-friendly waste management</p>
+            </div>
+            <div class="modal-images">
+                <img src="biodigester1.jpg" alt="Bio Digester 1" class="modal-img">
+                <img src="biodigester2.jpg" alt="Bio Digester 2" class="modal-img">
+                <img src="biodigester3.jpg" alt="Bio Digester 3" class="modal-img">
+            </div>
+            <div class="modal-description">
+                <h3>About This Service</h3>
+                <p>Professional bio digester installation and maintenance for sustainable waste management.</p>
+                <h3>What We Include:</h3>
+                <ul>
+                    <li>Site preparation</li>
+                    <li>Tank installation</li>
+                    <li>Bacterial inoculation</li>
+                    <li>Regular maintenance</li>
+                    <li>System optimization</li>
+                    <li>Emergency support</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 10: General Maintenance -->
-<div id="general-maintenance" class="modal" onclick="closeModalOnBgClick(event)">
-    <div class="modal-content">
-        <button class="close-btn" onclick="closeModal('general-maintenance')">×</button>
-        <div class="modal-header">
-            <h2>General Maintenance</h2>
-            <p>Professional site visits and general repairs</p>
-        </div>
-        <div class="modal-images">
-            <img src="https://i.imgur.com/hKwIhwM.jpeg" alt="Maintenance 1" class="modal-img">
-            <img src="https://i.imgur.com/OOYCHEr.jpeg" alt="Maintenance 2" class="modal-img">
-            <img src="https://i.imgur.com/DKLnkTP.jpeg" alt="Maintenance 3" class="modal-img">
-        </div>
-        <div class="modal-description">
-            <h3>About This Service</h3>
-            <p>We conduct professional site visits and general maintenance to keep all your systems in peak condition.</p>
-            <h3>What We Include:</h3>
-            <ul>
-                <li>On-site assessment and inspection</li>
-                <li>Preventive maintenance routines</li>
-                <li>Minor and major repairs</li>
-                <li>System performance checks</li>
-                <li>Scheduled maintenance plans</li>
-                <li>Full maintenance reporting</li>
-            </ul>
+    <div id="gutter-installation" class="modal" onclick="closeModalOnBgClick(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('gutter-installation')">×</button>
+            <div class="modal-header">
+                <h2>Gutter Installation</h2>
+                <p>Protect your property from water damage</p>
+            </div>
+            <div class="modal-images">
+                <img src="gutter1.jpg" alt="Gutter 1" class="modal-img">
+                <img src="gutter2.jpg" alt="Gutter 2" class="modal-img">
+                <img src="gutter3.jpg" alt="Gutter 3" class="modal-img">
+            </div>
+            <div class="modal-description">
+                <h3>About This Service</h3>
+                <p>Professional gutter systems installation and maintenance to protect your property.</p>
+                <h3>What We Include:</h3>
+                <ul>
+                    <li>Gutter selection and sizing</li>
+                    <li>Installation on all roof lines</li>
+                    <li>Downspout installation</li>
+                    <li>Leaf guards and covers</li>
+                    <li>Regular cleaning and maintenance</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 11: Emergency Services -->
-<div id="emergency" class="modal" onclick="closeModalOnBgClick(event)">
-    <div class="modal-content">
-        <button class="close-btn" onclick="closeModal('emergency')">×</button>
-        <div class="modal-header">
-            <h2>Emergency Services</h2>
-            <p>24/7 rapid response plumbing and repairs</p>
-        </div>
-        <div class="modal-images">
-            <img src="https://i.imgur.com/OSlmTkz.jpeg" alt="Emergency 1" class="modal-img">
-            <img src="https://i.imgur.com/YNEPtxb.jpeg" alt="Emergency 2" class="modal-img">
-            <img src="https://i.imgur.com/HsfuwAu.jpeg" alt="Emergency 3" class="modal-img">
-        </div>
-        <div class="modal-description">
-            <h3>About This Service</h3>
-            <p>Round-the-clock emergency plumbing and repair services to handle any urgent situation quickly.</p>
-            <h3>What We Include:</h3>
-            <ul>
-                <li>24/7 availability</li>
-                <li>Rapid response times</li>
-                <li>Emergency pipe repair</li>
-                <li>Leak detection and fixing</li>
-                <li>Water damage mitigation</li>
-                <li>Fast reliable solutions</li>
-            </ul>
+    <div id="heat-pump" class="modal" onclick="closeModalOnBgClick(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('heat-pump')">×</button>
+            <div class="modal-header">
+                <h2>Heat/Booster Pump</h2>
+                <p>Reliable hot water and pressure solutions</p>
+            </div>
+            <div class="modal-images">
+                <img src="pump1.jpg" alt="Pump 1" class="modal-img">
+                <img src="pump2.jpg" alt="Pump 2" class="modal-img">
+                <img src="pump3.jpg" alt="Pump 3" class="modal-img">
+            </div>
+            <div class="modal-description">
+                <h3>About This Service</h3>
+                <p>Professional heat and booster pump installation and maintenance for optimal water pressure and temperature.</p>
+                <h3>What We Include:</h3>
+                <ul>
+                    <li>System assessment</li>
+                    <li>Pump selection</li>
+                    <li>Professional installation</li>
+                    <li>Piping connections</li>
+                    <li>Regular maintenance</li>
+                    <li>Performance tuning</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 12: TV Mounting -->
-<div id="tv-mounting" class="modal" onclick="closeModalOnBgClick(event)">
-    <div class="modal-content">
-        <button class="close-btn" onclick="closeModal('tv-mounting')">×</button>
-        <div class="modal-header">
-            <h2>TV Mounting</h2>
-            <p>Professional television installation</p>
-        </div>
-        <div class="modal-images">
-            <img src="https://i.imgur.com/9co4SzI.jpeg" alt="TV 1" class="modal-img">
-            <img src="https://i.imgur.com/5aULanZ.jpeg" alt="TV 2" class="modal-img">
-            <img src="https://i.imgur.com/VBFXpiq.jpeg" alt="TV 3" class="modal-img">
-        </div>
-        <div class="modal-description">
-            <h3>About This Service</h3>
-            <p>Professional TV wall mounting with secure fitting and neat cable management.</p>
-            <h3>What We Include:</h3>
-            <ul>
-                <li>Wall assessment and stud finding</li>
-                <li>Secure bracket and mount installation</li>
-                <li>Cable routing and hiding</li>
-                <li>Tilt and swivel adjustment</li>
-                <li>Safety testing</li>
-                <li>Clean finish guaranteed</li>
-            </ul>
+    <div id="general-maintenance" class="modal" onclick="closeModalOnBgClick(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('general-maintenance')">×</button>
+            <div class="modal-header">
+                <h2>General Maintenance</h2>
+                <p>Keep your systems running smoothly</p>
+            </div>
+            <div class="modal-images">
+                <img src="maintenance1.jpg" alt="Maintenance 1" class="modal-img">
+                <img src="maintenance2.jpg" alt="Maintenance 2" class="modal-img">
+                <img src="maintenance3.jpg" alt="Maintenance 3" class="modal-img">
+            </div>
+            <div class="modal-description">
+                <h3>About This Service</h3>
+                <p>Regular maintenance services to prevent problems and keep all systems in peak condition.</p>
+                <h3>What We Include:</h3>
+                <ul>
+                    <li>Regular inspections</li>
+                    <li>Preventive maintenance</li>
+                    <li>Minor repairs</li>
+                    <li>System checks</li>
+                    <li>Performance optimization</li>
+                    <li>Maintenance schedules</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 13: Tank Installation -->
-<div id="tank-installation" class="modal" onclick="closeModalOnBgClick(event)">
-    <div class="modal-content">
-        <button class="close-btn" onclick="closeModal('tank-installation')">×</button>
-        <div class="modal-header">
-            <h2>Tank Installation & Cleaning</h2>
-            <p>Complete water tank installation and cleaning</p>
-        </div>
-        <div class="modal-images">
-            <img src="https://i.imgur.com/J4xnNic.jpeg" alt="Tank 1" class="modal-img">
-            <img src="https://i.imgur.com/F8Jskxm.jpeg" alt="Tank 2" class="modal-img">
-            <img src="https://i.imgur.com/JRJsG9I.jpeg" alt="Tank 3" class="modal-img">
-        </div>
-        <div class="modal-description">
-            <h3>About This Service</h3>
-            <p>Professional water tank installation, deep cleaning and maintenance for safe clean water storage.</p>
-            <h3>What We Include:</h3>
-            <ul>
-                <li>Tank sizing and selection</li>
-                <li>Stand and platform construction</li>
-                <li>Tank installation and positioning</li>
-                <li>Inlet and outlet pipe connections</li>
-                <li>Deep cleaning and disinfection</li>
-                <li>Regular maintenance and safety checks</li>
-            </ul>
+    <div id="emergency" class="modal" onclick="closeModalOnBgClick(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('emergency')">×</button>
+            <div class="modal-header">
+                <h2>Emergency Services</h2>
+                <p>24/7 rapid response plumbing</p>
+            </div>
+            <div class="modal-images">
+                <img src="emergency1.jpg" alt="Emergency 1" class="modal-img">
+                <img src="emergency2.jpg" alt="Emergency 2" class="modal-img">
+                <img src="emergency3.jpg" alt="Emergency 3" class="modal-img">
+            </div>
+            <div class="modal-description">
+                <h3>About This Service</h3>
+                <p>Round-the-clock emergency plumbing and repair services to handle urgent situations.</p>
+                <h3>What We Include:</h3>
+                <ul>
+                    <li>24/7 availability</li>
+                    <li>Rapid response times</li>
+                    <li>Emergency pipe repair</li>
+                    <li>Leak detection</li>
+                    <li>Water damage mitigation</li>
+                    <li>Quick solutions</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 14: Borehole Pump -->
-<div id="borehole-pump" class="modal" onclick="closeModalOnBgClick(event)">
-    <div class="modal-content">
-        <button class="close-btn" onclick="closeModal('borehole-pump')">×</button>
-        <div class="modal-header">
-            <h2>Borehole Pump Fitting</h2>
-            <p>Borehole pump fitting and installation</p>
-        </div>
-        <div class="modal-images">
-            <img src="https://i.imgur.com/efATfN6.jpeg" alt="Borehole 1" class="modal-img">
-            <img src="https://i.imgur.com/IO8FAqL.jpeg" alt="Borehole 2" class="modal-img">
-            <img src="https://i.imgur.com/k6Pv5NN.jpeg" alt="Borehole 3" class="modal-img">
-        </div>
-        <div class="modal-description">
-            <h3>About This Service</h3>
-            <p>Expert borehole pump fitting and installation for reliable water supply for homes, farms and commercial properties.</p>
-            <h3>What We Include:</h3>
-            <ul>
-                <li>Borehole assessment and testing</li>
-                <li>Pump selection and sizing</li>
-                <li>Professional pump installation</li>
-                <li>Rising main pipe fitting</li>
-                <li>Control panel and electrical wiring</li>
-                <li>Commissioning and maintenance</li>
-            </ul>
+    <div id="tv-mounting" class="modal" onclick="closeModalOnBgClick(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('tv-mounting')">×</button>
+            <div class="modal-header">
+                <h2>TV Mounting</h2>
+                <p>Professional television installation</p>
+            </div>
+            <div class="modal-images">
+                <img src="tv1.jpg" alt="TV 1" class="modal-img">
+                <img src="tv2.jpg" alt="TV 2" class="modal-img">
+                <img src="tv3.jpg" alt="TV 3" class="modal-img">
+            </div>
+            <div class="modal-description">
+                <h3>About This Service</h3>
+                <p>Professional TV installation with secure mounting and clean cable management.</p>
+                <h3>What We Include:</h3>
+                <ul>
+                    <li>Wall assessment and stud finding</li>
+                    <li>Secure mount installation</li>
+                    <li>Cable routing and hiding</li>
+                    <li>Electrical outlet installation</li>
+                    <li>Bracket adjustment</li>
+                    <li>Safety testing</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
+
+    <div id="tank-installation" class="modal" onclick="closeModalOnBgClick(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('tank-installation')">×</button>
+            <div class="modal-header">
+                <h2>Tank Installation & Cleaning</h2>
+                <p>Complete water tank solutions</p>
+            </div>
+            <div class="modal-images">
+                <img src="tank1.jpg" alt="Tank 1" class="modal-img">
+                <img src="tank2.jpg" alt="Tank 2" class="modal-img">
+                <img src="tank3.jpg" alt="Tank 3" class="modal-img">
+            </div>
+            <div class="modal-description">
+                <h3>About This Service</h3>
+                <p>Professional water tank installation, cleaning, and maintenance for safe water storage.</p>
+                <h3>What We Include:</h3>
+                <ul>
+                    <li>Tank sizing and selection</li>
+                    <li>Installation and positioning</li>
+                    <li>Connection to plumbing</li>
+                    <li>Deep cleaning services</li>
+                    <li>Regular maintenance</li>
+                    <li>Disinfection and safety checks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="all-drainage" class="modal" onclick="closeModalOnBgClick(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('all-drainage')">×</button>
+            <div class="modal-header">
+                <h2>All Types of Drainage</h2>
+                <p>Comprehensive drainage for every need</p>
+            </div>
+            <div class="modal-images">
+                <img src="alldrainage1.jpg" alt="Drainage 1" class="modal-img">
+                <img src="alldrainage2.jpg" alt="Drainage 2" class="modal-img">
+                <img src="alldrainage3.jpg" alt="Drainage 3" class="modal-img">
+            </div>
+            <div class="modal-description">
+                <h3>About This Service</h3>
+                <p>We specialize in all types of drainage solutions for residential, commercial, and industrial properties.</p>
+                <h3>What We Include:</h3>
+                <ul>
+                    <li>Surface drainage systems</li>
+                    <li>Subsurface drainage</li>
+                    <li>Stormwater management</li>
+                    <li>Wastewater systems</li>
+                    <li>Custom drainage solutions</li>
+                    <li>Maintenance and repairs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Contact</h4>
+                <p>📱 Phone: 0721689895</p>
+                <p>✉️ Email: joeladger254@gmail.com</p>
+                <p>🌍 Service: Countrywide</p>
+            </div>
+            <div class="footer-section">
+                <h4>Our Services</h4>
+                <p>• Bathroom Installation</p>
+                <p>• Solar Water Heater</p>
+                <p>• Water Filtration</p>
+                <p>• Emergency Services</p>
+            </div>
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Ladger's Interior & Plumbing Solutions provides professional, reliable plumbing and interior services across the country.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ladger's Interior & Plumbing Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        function closeModalOnBgClick(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                document.querySelectorAll('.modal.active').forEach(modal => {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
